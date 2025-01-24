@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form and Data Table</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form class="cform">
+      <h2>Contact Us</h2>
+      <input type="text" class="name" placeholder="Full Name" required />
+      <input type="email" class="email" placeholder="Email Address" required />
+      <input type="tel" class="phone" placeholder="Phone Number" required />
+      <textarea
+        class="tarea"
+        rows="5"
+        placeholder="Your Message"
+        required
+      ></textarea>
+      <button type="submit" class="sub">Send Message</button>
+    </form>
+
+    <div class="data-section">
+      <h2>Contact Form Submissions</h2>
+      <button class="fetch-data">Load Data</button>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script type="module" src="contactForm.js"></script>
+  </body>
+</html>
